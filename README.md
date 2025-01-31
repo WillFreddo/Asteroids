@@ -13,12 +13,19 @@ The extras I have added are:
             - Red      -    Shooting Speed
             - Blue     -    Bullet Size
             - Green    -    Bullet Pierce
+
+As of Boss update + patch
+    - New upgrade
             - Purple   -    Bullet Damage * Currently dont spawn
     - Boss Asteroids added every 50 spawns
+
+    movement speed, shooting speed and bullet pierce are now functional. balancing to be completed at later date
 
 My to do list:
     - Implement upgrades
     - More visuals for upgrades
+    - fix game over screen
+        - include way to reset highscore
     - Visual for upgrades
     - Change boss spawn pattern
     - fix boss bounces

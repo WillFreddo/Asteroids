@@ -38,12 +38,10 @@ def main():
     Upgrade.containers = (upgrades, updateable, drawable)
     Shot.containers = (shots, updateable, drawable)
     asteroid_field = AsteroidField()
-    #upgrade_field = UpgradeField()
 
     player = Player(SCREEN_WIDTH/2, SCREEN_HEIGHT/2)
     dt = 0
     High = False
-    upgrade = Upgrade(300, 500)
     small = 0
     upgrade_time = 0
 
