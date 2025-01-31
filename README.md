@@ -10,13 +10,18 @@ The extras I have added are:
     - Screen Wrapping
     - Upgrades - currently rotate and pickupable but do nothing. These will be:
             - Yellow   -    Movement speed
-            - Red      -    Shot Speed
+            - Red      -    Shooting Speed
             - Blue     -    Bullet Size
             - Green    -    Bullet Pierce
+            - Purple   -    Bullet Damage * Currently dont spawn
+    - Boss Asteroids added every 50 spawns
 
 My to do list:
     - Implement upgrades
     - More visuals for upgrades
     - Visual for upgrades
+    - Change boss spawn pattern
+    - fix boss bounces
+    - add boss health bars underneath 
     - life system?
     - restart from game over?

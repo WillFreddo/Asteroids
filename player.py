@@ -10,10 +10,11 @@ class Player(CircleShape):
         super().__init__(x, y, PLAYER_RADIUS)
         self.rotation = 0
         self.timer = 0
-        self.upgrades = [0, 0, 0, 0]
+        self.upgrades = [0, 0, 0, 0, 0]
         self.kills = 0
         self.killed = [0 ,0, 0]
-        # movement speed, shot speed, bullet size, bullet pierce
+        self.boss_kills = 0
+        # movement speed, shot speed, bullet size, bullet pierce, bullet damage
 
     def draw(self, screen):
         pygame.draw.polygon(screen, "white", self.triangle(), 2)
@@ -48,14 +49,14 @@ class Player(CircleShape):
 
     def move(self, dt):
         forward = pygame.Vector2(0, 1).rotate(self.rotation)
-        self.position += forward * PLAYER_SPEED * dt
+        self.position += forward * (PLAYER_SPEED + 50 * self.upgrades[0]) * dt
 
     def shoot(self):
         if self.timer > 0:
             return
         shot = Shot(self.position.x, self.position.y)
         shot.velocity = pygame.Vector2(0, 1).rotate(self.rotation) * PLAYER_SHOOT_SPEED
-        self.timer = PLAYER_SHOOT_COOLDOWN
+        self.timer = PLAYER_SHOOT_COOLDOWN - (0.1 * self.upgrades[1])
 
     def wrap(self):
         if self.position[0] <= 0:
