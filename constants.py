@@ -16,4 +16,13 @@ PLAYER_SHOOT_SPEED = 500
 
 PLAYER_SHOOT_COOLDOWN = 0.3
 
+UPGRADE_TURN_SPEED = 100
+
 SHOT_RADIUS = 5
+
+UPGRADE_RADIUS = 15
+UPGRADE_COLOUR = ["yellow", "red", "blue", "green"]
+# movement speed, shot speed, bullet size, bullet pierce
+
+UPGRADE_DESPAWN = 10
+UPGRADE_COOLDOWN = 10
